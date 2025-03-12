@@ -1,0 +1,7 @@
+function changeMode() {
+
+}
+
+function changeLanguage() {
+    
+}
