@@ -12,7 +12,13 @@
 
     --fonte_titulo: 'Roboto Serif', serif;
     --fonte_texto: 'Roboto Flex', sans-serif;
-    
+
+}
+
+html, body {
+    width: 100vw;
+    height: auto;
+    color: var(--cor_branco);
 }
 
 * {
@@ -21,4 +27,95 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* HEADER */
+
+header {
+    background-color: var(--cor_cinza);
+    color: var(--cor_branco);
+    font-family: var(--fonte_texto);
+    padding: 1rem;
+}
+
+header .content nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-title {
+    font-family: var(--fonte_titulo);
+    font-weight: 400;
+    font-size: 30px;
+}
+
+header .content nav figure {
+    width: 30px;
+    height: auto;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* MENU HAMBURGUER */
+
+.btn-burguer {
+    background-color: transparent !important;
+    color: var(--cor_branco);
+    height: 30px;
+}
+
+i#burguer {
+    font-size: 30px;
+    height: auto;
+}
+
+header .content nav figure img {
+    width: 100%;
+}
+
+nav .nav-btns {
+    display: flex;
+    align-items: center;
+}
+
+/* MENU */
+
+.offcanvas {
+    background-color: var(--cor_cinza)!important;
+    color: var(--cor_branco);
+}
+
+.offcanvas-body {
+    padding: 0!important;
+}
+
+menu {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+menu ul {
+    padding: 0;
+}
+
+menu li {
+    list-style-type: none;
+}
+
+menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: var(--cor_cinza);
+}
+
+.btn-close {
+    background: transparent url("../img/close.png") center / 1em auto no-repeat!important;
+}
+
+/* section initial-info */
 
