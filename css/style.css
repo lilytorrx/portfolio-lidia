@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+:root {
+    --cor_principal: #2152E3;
+    --cor_branco: #fff;
+    --cor_preto: #000;
+    --cor_cinza: #181818;
+    --cor_cinza_escuro: #111111;
+
+    --cor_azul_claro: #E7F3FF;
+
+    --fonte_titulo: 'Roboto Serif', serif;
+    --fonte_texto: 'Roboto Flex', sans-serif;
+    
+}
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
