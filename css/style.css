@@ -19,6 +19,8 @@ html, body {
     width: 100vw;
     height: auto;
     color: var(--cor_branco);
+
+    scroll-behavior: smooth;
 }
 
 * {
@@ -121,10 +123,10 @@ menu ul li a {
 /* section initial-info */
 
 .initial-info {
-    background-image: url("../img/pixel-art-background.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.67)), url("../img/pixel-art-background-portrait.jpeg");
     background-size: cover;
+    background-position: bottom center;
     background-repeat: no-repeat;
-    background-position: right center;
     color: var(--cor_branco);
     padding: 2rem;
     text-align: center;
@@ -145,9 +147,46 @@ menu ul li a {
 .info-title {
     font-family: var(--fonte_titulo);
     font-size: 24px;
+    font-weight: 400;
     margin: 0.5rem;
 }
 
 strong {
     color: var(--cor_principal);
+}
+
+/* CONTACTS */
+
+.info-contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    display: inline-block;
+    width: 50px;
+    margin: 0 5px;
+}
+
+.contact img {
+    width: 100%;
+    height: auto;
+}
+
+/* ABOUT ME */
+
+.about-me {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.67)), url("../img/pixel-art-section-2.jpg") left center / cover no-repeat;
+    color: var(--cor_branco);
+    padding: 3rem;
+    text-align: justify;
+}
+
+.about-me-title {
+    font-size: 24px;
+    color: var(--cor_principal);
+    font-family: var(--fonte_titulo);
+    margin-bottom: 1rem;
 }
