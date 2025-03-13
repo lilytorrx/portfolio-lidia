@@ -83,6 +83,7 @@ nav .nav-btns {
 .offcanvas {
     background-color: var(--cor_cinza)!important;
     color: var(--cor_branco);
+    padding-left: 1rem;
 }
 
 .offcanvas-body {
@@ -119,3 +120,34 @@ menu ul li a {
 
 /* section initial-info */
 
+.initial-info {
+    background-image: url("../img/pixel-art-background.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    color: var(--cor_branco);
+    padding: 2rem;
+    text-align: center;
+}
+
+.info .img-lidia {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.img-lidia img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.info-title {
+    font-family: var(--fonte_titulo);
+    font-size: 24px;
+    margin: 0.5rem;
+}
+
+strong {
+    color: var(--cor_principal);
+}
