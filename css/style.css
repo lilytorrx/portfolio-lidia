@@ -190,3 +190,27 @@ strong {
     font-family: var(--fonte_titulo);
     margin-bottom: 1rem;
 }
+
+/* BUTTONS */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    text-align: center;
+    margin: 5px;
+    color: var(--cor_branco)!important;
+}
+
+.download-resume-pt-br { background-color: var(--cor_principal)!important; }
+
+.download-resume-eng {
+    border: 1px solid var(--cor_branco)!important;
+    background-color: var(--cor_cinza)!important;
+}
