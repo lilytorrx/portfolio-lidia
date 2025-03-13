@@ -12,7 +12,6 @@
 
     --fonte_titulo: 'Roboto Serif', serif;
     --fonte_texto: 'Roboto Flex', sans-serif;
-
 }
 
 html, body {
@@ -213,4 +212,53 @@ strong {
 .download-resume-eng {
     border: 1px solid var(--cor_branco)!important;
     background-color: var(--cor_cinza)!important;
+}
+
+/* TECNOLOGIES */
+
+.carousel-tecnologies {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.67)), url("../img/pixel-art-section.jpg") left center / cover no-repeat;
+    padding: 3rem 1rem;
+    color: var(--cor_branco);
+}
+
+.flex-tecnologies {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tecnology {
+    width: 100px;
+    height: auto;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.logo-tecnology {
+    width: 100px;
+    height: 100px;
+}
+
+.logo-tecnology img {
+    width: 100%;
+    height: auto;
+}
+
+.name-tecnology {
+    font-size: 16px;
+    text-align: center!important;
+    margin: 0!important;
+}
+
+.tecnologies-title {
+    font-size: 24px;
+    color: var(--cor_principal);
+    font-family: var(--fonte_titulo);
+    text-align: center;
+    margin: 1rem 0;
 }
