@@ -43,7 +43,7 @@ header .content nav {
     align-items: center;
 }
 
-header .header-title {
+header .header-title, footer .footer-title {
     font-family: var(--fonte_titulo);
     font-weight: 400;
     font-size: 30px;
@@ -281,10 +281,11 @@ strong {
 .project {
     border-radius: 20px;
     margin: 2rem 0.5rem;
+    padding-bottom: 1rem;
 }
 
 .project-description {
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: var(--cor_cinza);
     font-family: var(--fonte_texto);
     color: var(--cor_branco);
@@ -318,4 +319,34 @@ strong {
     background-color: var(--cor_principal);
     display: block;
     margin: auto;
+}
+
+/* FOOTER */
+
+footer .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .change-btns {
+    width: 30px;
+    cursor: pointer;
+}
+
+footer .change-btns img {
+    width: 100%;
+}
+
+.subfooter {
+    text-align: center;
+}
+
+.subfooter a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.function-buttons {
+    display: flex;
+    gap: 10px;
 }
