@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
 :root {
-    --cor_principal: #2152E3;
+    --cor_principal: #2b59e4;
     --cor_branco: #fff;
     --cor_preto: #000;
     --cor_cinza: #181818;
@@ -15,7 +15,6 @@
 }
 
 html, body {
-    width: 100vw;
     height: auto;
     color: var(--cor_branco);
 
@@ -31,7 +30,7 @@ html, body {
 
 /* HEADER */
 
-header {
+header, footer {
     background-color: var(--cor_cinza);
     color: var(--cor_branco);
     font-family: var(--fonte_texto);
@@ -201,7 +200,7 @@ strong {
 .btn {
     width: 200px;
     height: auto;
-    border-radius: 20px;
+    border-radius: 10px!important;
     text-align: center;
     margin: 5px;
     color: var(--cor_branco)!important;
@@ -261,4 +260,62 @@ strong {
     font-family: var(--fonte_titulo);
     text-align: center;
     margin: 1rem 0;
+}
+
+/* PROJECTS */
+
+.projects {
+    padding: 3rem 1rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.67)), url("../img/mobile.jpeg") left center / cover no-repeat;
+    text-align: center;
+}
+
+.title-projects {
+    color: var(--cor_principal);
+    text-align: center;
+    font-family: var(--fonte_titulo);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.project {
+    border-radius: 20px;
+    margin: 2rem 0.5rem;
+}
+
+.project-description {
+    padding: 1rem;
+    background-color: var(--cor_cinza);
+    font-family: var(--fonte_texto);
+    color: var(--cor_branco);
+    text-align: justify;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.project-name {
+    margin: 0.5rem;
+    text-align: center;
+    font-family: var(--fonte_titulo);
+}
+
+.project-logo {
+    border-radius: 20px 20px 0 0;
+    height: 300px;
+    background-color: var(--cor_branco);
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-logo img {
+    width: 150px;
+    object-fit: contain;
+}
+
+.project-description a {
+    background-color: var(--cor_principal);
+    display: block;
+    margin: auto;
 }
