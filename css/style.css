@@ -121,7 +121,7 @@ menu ul li a {
 /* section initial-info */
 
 .initial-info {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.67)), url("../img/pixel-art-background-portrait.jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.67)), url("../img/pixel-art-background-projects.jpg") bottom center / cover no-repeat;
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -147,6 +147,10 @@ menu ul li a {
     font-size: 24px;
     font-weight: 400;
     margin: 0.5rem;
+}
+
+.info-career {
+    font-family: var(--fonte_titulo);
 }
 
 strong {
@@ -215,7 +219,7 @@ strong {
 
 /* TECNOLOGIES */
 
-.carousel-tecnologies {
+.tecnologies {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.67)), url("../img/pixel-art-section.jpg") left center / cover no-repeat;
     padding: 3rem 1rem;
     color: var(--cor_branco);
@@ -223,15 +227,15 @@ strong {
 
 .flex-tecnologies {
     display: flex;
+    text-align: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
 }
 
 .tecnology {
-    width: 100px;
     height: auto;
     text-align: center;
     padding: 10px;

@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@media (min-width: 700px) {
+
+    /* INITIAL-INFO */
+
+    .info {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        justify-content: space-around;
+        text-align: left;
+        gap: 10px;
+    }
+
+    .info-career, .info-contacts {
+        margin: 0.5rem;
+    }
+
+    /* ABOUT ME */
+
+    .about-me {
+        padding: 4rem 6rem;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.67)), url("../img/pixel-art-background.jpeg") bottom center / cover no-repeat;
+    }
+
+    .about-me .content {
+        width: 80%;
+        margin: auto;
+    }
+
+    .about-me-title {
+        font-size: 30px;
+    }
+
+    .about-me-text {
+        font-size: 20px;
+    }
+
+    /* BUTTONS */
+
+    .btn {
+        padding: 0.5rem!important;
+        width: 300px;
+        height: auto;
+    }
+
+    /* TECNOLOGIES */
+
+    .tecnologies {
+        padding: 3rem 4rem;
+    }
+
+    .tecnology {
+        display: inline-block;
+    }
+
+    /* PROJECTS */
+
+}
