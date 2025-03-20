@@ -356,3 +356,14 @@ footer .change-btns img {
     display: flex;
     gap: 10px;
 }
+
+footer .content .nav {
+    width: 100%;
+    display: block;
+}
+
+.info-footer {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+}

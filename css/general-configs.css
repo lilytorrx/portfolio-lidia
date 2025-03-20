@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+html, body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header, footer {
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.initial-info, .about-me, .tecnologies, .projects {
+    transition: background 0.5s ease;
+}
+
+.project-logo img, .info-contacts img {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+img {
+    transition: opacity 0.5s ease, filter 0.5s ease;
+}
+
+.btn, .download-resume-pt-br, .download-resume-eng {
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+
+a {
+    transition: color 0.5s ease;
+}
+
+::-webkit-scrollbar-thumb {
+    transition: background-color 0.5s ease;
+}
+
+nav .nav-btns, .offcanvas, .project-description {
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
