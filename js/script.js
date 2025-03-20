@@ -1,3 +1,6 @@
+document.documentElement.lang = "pt-br"; 
+
+
 function changeMode() {
     const themeLink = document.getElementById('theme-link');
     const iconTheme = document.getElementById('icon-theme');
@@ -10,6 +13,18 @@ function changeMode() {
         themeLink.href = '../css/dark-mode.css';
         iconTheme.src = '../img/light-mode.png';
         localStorage.setItem('theme', 'dark');
+    }
+}
+
+function changeLanguage() {
+    const currentLang = document.documentElement.lang;
+    const lang = currentLang === 'pt-br' ? 'en' : 'pt-br';
+    document.documentElement.lang = lang;
+
+    if(currentLang === 'pt-br') {
+    } else if(currentLang === 'en') {
+        let titleLidia = document.getElementById('info-title');
+        titleLidia.innerHTML = `Hello, my name is <strong>Lídia Torres!</strong>`;
     }
 }
 
@@ -26,23 +41,3 @@ window.addEventListener('DOMContentLoaded', () => {
         iconTheme.src = '../img/light-mode.png';
     }
 });
-
-$(document).ready(function() {
-    // Esconde os elementos inicialmente
-    $('.fade-in').css('opacity', 0);
-
-    $(window).on('scroll', function() {
-        $('.fade-in').each(function() {
-            var elementOffset = $(this).offset().top; // Posição do elemento
-            var windowScroll = $(window).scrollTop() + $(window).height(); // Posição do scroll
-
-            // Se o elemento estiver na tela
-            if (windowScroll > elementOffset) {
-                $(this).animate({
-                    opacity: 1
-                }, 800); // Animação para mostrar o elemento
-            }
-        });
-    });
-});
-
