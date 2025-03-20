@@ -16,18 +16,6 @@ function changeMode() {
     }
 }
 
-function changeLanguage() {
-    const currentLang = document.documentElement.lang;
-    const lang = currentLang === 'pt-br' ? 'en' : 'pt-br';
-    document.documentElement.lang = lang;
-
-    if(currentLang === 'pt-br') {
-    } else if(currentLang === 'en') {
-        let titleLidia = document.getElementById('info-title');
-        titleLidia.innerHTML = `Hello, my name is <strong>Lídia Torres!</strong>`;
-    }
-}
-
 window.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme') || 'dark';
     const themeLink = document.getElementById('theme-link');
@@ -40,4 +28,23 @@ window.addEventListener('DOMContentLoaded', () => {
         themeLink.href = '../css/dark-mode.css';
         iconTheme.src = '../img/light-mode.png';
     }
+
 });
+
+
+
+
+function changeLanguage() {
+    const currentLang = document.documentElement.lang;
+    let lang = currentLang == 'en' ? 'pt-br' : 'en';
+    
+    console.log(lang)
+    if(lang === 'pt-br') {
+        let titleLidia = document.getElementById('info-title');
+        titleLidia.innerHTML = `Olá, meu nome é <strong>Lídia Torres!</strong>`;
+    } else if(lang === 'en') {
+        let titleLidia = document.getElementById('info-title');
+        titleLidia.innerHTML = `Hello, my name is <strong>Lídia Torres!</strong>`;
+    }
+}
+
