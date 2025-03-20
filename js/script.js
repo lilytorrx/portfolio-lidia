@@ -1,6 +1,5 @@
 document.documentElement.lang = "pt-br"; 
 
-
 function changeMode() {
     const themeLink = document.getElementById('theme-link');
     const iconTheme = document.getElementById('icon-theme');
@@ -31,9 +30,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 });
 
-
-
-
 function changeLanguage() {
     const currentLang = document.documentElement.lang;
     let lang = currentLang == 'en' ? 'pt-br' : 'en';
@@ -47,4 +43,3 @@ function changeLanguage() {
         titleLidia.innerHTML = `Hello, my name is <strong>Lídia Torres!</strong>`;
     }
 }
-
