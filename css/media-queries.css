@@ -21,7 +21,6 @@
 
     .about-me {
         padding: 4rem 6rem;
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.67)), url("../img/pixel-art-background.jpeg") bottom center / cover no-repeat;
     }
 
     .about-me .content {
@@ -73,7 +72,7 @@
     .project-description {
         width: 60%;
         border-radius: 0px 20px 20px 0px;
-        padding: 0.5rem 1rem;
+        padding: 1.5rem 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;

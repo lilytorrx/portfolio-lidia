@@ -7,8 +7,8 @@
     --cor_preto: #000;
 
     --cor_cinza: #181818;
-    --cor_cinza_claro:rgb(179, 179, 179);
-    --cor_azul_claro: #E7F3FF;
+    --cor_cinza_claro:rgb(241, 241, 241);
+    --cor_azul_claro:rgb(235, 244, 253);
 
     --fonte_titulo: 'Roboto Serif', serif;
     --fonte_texto: 'Roboto Flex', sans-serif;
@@ -111,11 +111,13 @@ menu ul li a {
     padding: 20px;
     margin: 10px;
     text-align: center;
-    background-color: var(--cor_cinza);
+    background-color: var(--cor_branco);
+    color: var(--cor_preto);
 }
 
 .btn-close {
-    background: transparent url("../img/close.png") center / 1em auto no-repeat!important;
+    color: var(--cor_preto);
+    background: var(--cor_preto) url("../img/close.png") center / 1em auto no-repeat!important;
 }
 
 /* section initial-info */
@@ -123,7 +125,7 @@ menu ul li a {
 .initial-info {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.67)), url("../img/pixel-art-background-light-mode.jpg") center center / cover no-repeat;
     background-size: cover;
-    background-position: bottom center;
+    background-position: right center;
     background-repeat: no-repeat;
     color: var(--cor_branco);
     padding: 2rem;
@@ -180,8 +182,8 @@ strong {
 /* ABOUT ME */
 
 .about-me {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.67)), url("../img/pixel-art-section-2.jpg") left center / cover no-repeat;
-    color: var(--cor_branco);
+    background-color: var(--cor_branco)!important;
+    color: var(--cor_preto);
     padding: 3rem;
     text-align: justify;
 }
@@ -220,9 +222,9 @@ strong {
 /* TECNOLOGIES */
 
 .tecnologies {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.67)), url("../img/pixel-art-section.jpg") left center / cover no-repeat;
+    background-color: var(--cor_azul_claro);
     padding: 3rem 1rem;
-    color: var(--cor_branco);
+    color: var(--cor_preto);
 }
 
 .flex-tecnologies {
@@ -269,7 +271,7 @@ strong {
 
 .projects {
     padding: 3rem 1rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.67)), url("../img/mobile.jpeg") left center / cover no-repeat;
+    background-color: var(--cor_cinza_claro);
     text-align: center;
 }
 
@@ -284,14 +286,15 @@ strong {
 .project {
     border-radius: 20px;
     margin: 2rem 0.5rem;
-    padding-bottom: 1rem;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .project-description {
-    padding: 1.5rem;
-    background-color: var(--cor_cinza);
+    padding: 1.5rem 2rem;
+    background-color: var(--cor_branco);
     font-family: var(--fonte_texto);
-    color: var(--cor_branco);
+    color: var(--cor_preto);
+    border-top: 1px solid var(cor_cinza);
     text-align: justify;
     border-radius: 0px 0px 20px 20px;
 }
@@ -304,9 +307,9 @@ strong {
 
 .project-logo {
     border-radius: 20px 20px 0 0;
-    height: 300px;
+    height: 320px;
     background-color: var(--cor_branco);
-    padding: 1rem;
+    padding: 1.5rem;
     margin: auto;
     display: flex;
     align-items: center;
