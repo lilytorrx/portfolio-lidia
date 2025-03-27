@@ -5,8 +5,8 @@ function changeMode() {
     const iconTheme = document.getElementById('icon-theme');
 
     if (themeLink.href.includes('dark-mode.css')) {
-        themeLink.href = '../css/light-mode.css';
-        iconTheme.src = '../img/dark-mode.png';
+        themeLink.href = 'css/light-mode.css';
+        iconTheme.src = 'img/dark-mode.png';
         localStorage.setItem('theme', 'light');
     } else {
         themeLink.href = '../css/dark-mode.css';
@@ -21,11 +21,11 @@ window.addEventListener('DOMContentLoaded', () => {
     const iconTheme = document.getElementById('icon-theme');
 
     if (savedTheme === 'light') {
-        themeLink.href = '../css/light-mode.css';
+        themeLink.href = 'css/light-mode.css';
         iconTheme.src = '../img/dark-mode.png';
     } else {
-        themeLink.href = '../css/dark-mode.css';
-        iconTheme.src = '../img/light-mode.png';
+        themeLink.href = 'css/dark-mode.css';
+        iconTheme.src = 'img/light-mode.png';
     }
 
 });
@@ -65,7 +65,7 @@ function changeTexts(lang) {
             button.innerHTML = `Visitar projeto`;
         });
 
-        elements.logoCountry.src = "../img/brasil-logo.png";
+        elements.logoCountry.src = "img/brasil-logo.png";
         elements.visitProject.innerHTML = `Visitar projeto`;
 
         elements.contactsLink.innerHTML = "Contatos";
