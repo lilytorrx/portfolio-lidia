@@ -7,7 +7,7 @@
     <link id="theme-link"rel="stylesheet" href="css/dark-mode.css">
     <link rel="stylesheet" href="css/media-queries.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="img/foto-lidia.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/github-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/general-configs.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -22,7 +22,7 @@
                         <img id="icon-theme" src="img/light-mode.png" alt="Trocar modo/Change mode">
                     </figure>
                     <figure onclick="changeLanguage()">
-                        <img src="img/brasil-logo.png" alt="Trocar idioma/Change language">
+                        <img src="img/brasil-logo.png" id="logo-country" alt="Trocar idioma/Change language">
                     </figure>
                     <button class="btn-burguer" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i id="burguer" class="material-icons">menu</i></button>
                 </div>
@@ -52,7 +52,7 @@
                     </figure>
                     <div class="lidia-info">
                         <h2 class="info-title" id="info-title">Olá, meu nome é <strong>Lídia Torres!</strong></h2>
-                        <p class="info-career">Desenvolvedora Full-stack</p>
+                        <p class="info-career" id="info-career">Desenvolvedora Full-stack</p>
                         <div class="info-contats" id="info-contacts">
                             <div class="contact">
                                 <a href="https://www.linkedin.com/in/lilytorrx/" target="_blank"><img src="img/linkedin-logo.png" alt="Linkedin"></a>
@@ -71,10 +71,10 @@
         <section class="about-me" id="about-me">
             <div class="content">
                 <h2 class="about-me-title">Sobre mim</h2>
-                <p class="about-me-text">
+                <p class="about-me-text" id="about-me-text">
                     Desenvolvedora Full-Stack, aprimoro minhas habilidades na criação de sistemas  completos e funcionais acoplado de interfaces interativas. Tenho trabalhado como freelancer  nos últimos 4 anos. Minha especialidade inclui React, React Native, HTML5, CSS3, JS (ES6),  Bootstrap, PHP, Laravel, Java e SQL.
                 </p>
-                <p class="about-me-text">
+                <p class="about-me-text" id='about-me-text-2'>
                     Durante meu curso técnico, percebi a enorme paixão que eu possuo em relação à área de programação. Eu adorava fazer os projetos e, fazer uns projetos individuais para prática e desenvolvimento profissional.
                 </p>
                 <div class="buttons">
@@ -88,7 +88,7 @@
             </div>
         </section>
         <section class="tecnologies">
-            <h2 class="tecnologies-title">Especialidades/Tecnologias</h2>
+            <h2 class="tecnologies-title" id="tecnologies-title">Especialidades/Tecnologias</h2>
             <div class="flex-tecnologies">
                 <div class="first-section-carousel">
                     <div class="tecnology">
@@ -136,16 +136,16 @@
                 </div>
             </div>
         </section>
-        <section class="projects" id="projects">
-            <h2 class="title-projects">Projetos</h2>
+        <section class="projects">
+            <h2 class="title-projects" id="projects">Projetos</h2>
             <section class="project">
                 <figure class="project-logo">
                     <img src="img/matin-logo.png" alt="Mat-in">
                 </figure>
                 <div class="project-description">
                     <h3 class="project-name">Mat-in</h3>
-                    <p>Marketplace de produtos agrícolas e de agricultura familiar feito em <strong>PHP</strong>. O site oferece uma interface fácil de  usar para pesquisar, comparar, comprar e vender produtos de uma ampla seleção do agronegócio  que variam com categorias, tamanho e preço. O site também conta com filtragem de produtos e um  painel de controle (dashboard) para os usuários.</p>
-                    <a class="btn visit-project" href="https://www.github.com/projetomatin" target="_blank"">Visitar projeto</a>
+                    <p id="project1-desc">Marketplace de produtos agrícolas e de agricultura familiar feito em <strong>PHP</strong>. O site oferece uma interface fácil de  usar para pesquisar, comparar, comprar e vender produtos de uma ampla seleção do agronegócio  que variam com categorias, tamanho e preço. O site também conta com filtragem de produtos e um  painel de controle (dashboard) para os usuários.</p>
+                    <a class="btn visit-project" href="https://www.github.com/projetomatin" target="_blank">Visitar projeto</a>
                 </div>
             </section>
             <section class="project">
@@ -154,7 +154,7 @@
                 </figure>
                 <div class="project-description">
                     <h3 class="project-name">LTEvents</h3>
-                    <p>Um site para hospedagem de eventos feito em <strong>Laravel</strong>, onde os usuários poderão ver, criar e confirmar presença em um evento qualquer. Os usuários também poderão decidir se o evento é privado ou não, podendo incluir os níveis de acesso que os outros usuários terão que ter para poder acessar o evento e confirmar presença.</p>
+                    <p id="project2-desc">Um site para hospedagem de eventos feito em <strong>Laravel</strong>, onde os usuários poderão ver, criar e confirmar presença em um evento qualquer. Os usuários também poderão decidir se o evento é privado ou não, podendo incluir os níveis de acesso que os outros usuários terão que ter para poder acessar o evento e confirmar presença.</p>
                     <a class="btn visit-project" href="https://www.github.com/lilytorrx/ltevents" target="_blank"">Visitar projeto</a>
                 </div>
             </section>
@@ -164,7 +164,7 @@
                 </figure>
                 <div class="project-description">
                     <h3 class="project-name">BitCont</h3>
-                    <p>BitCont é um aplicativo desenvolvido com <strong>React Native</strong>para consulta de cotações de Bitcoin, consumindo uma API de preços. O aplicativo oferece uma interface simples para visualizar a cotação do Bitcoin em tempo real, além de gráficos históricos.</p>
+                    <p id="project3-desc">BitCont é um aplicativo desenvolvido com <strong>React Native</strong> para consulta de cotações de Bitcoin, consumindo uma API de preços. O aplicativo oferece uma interface simples para visualizar a cotação do Bitcoin em tempo real, além de gráficos históricos.</p>
                     <a class="btn visit-project" href="https://www.github.com/lilytorrx/bitcont" target="_blank">Visitar projeto</a>
                 </div>
             </section>
@@ -174,7 +174,7 @@
                 </figure>
                 <div class="project-description">
                     <h3 class="project-name">nexusSocial</h3>
-                    <p>Criei uma rede social chamada de NexusSocial, onde utilizo o layout do Facebook como inspiração para fazer o meu próprio. Feito em <strong>HTML, CSS e JavaScript.</strong></p>
+                    <p id="project4-desc">Criei uma rede social chamada de NexusSocial, onde utilizo o layout do Facebook como inspiração para fazer o meu próprio. Feito em <strong>HTML, CSS e JavaScript.</strong></p>
                     <a class="btn visit-project" href="https://www.github.com/lilytorrx/nexusSocial" target="_blank"">Visitar projeto</a>
                 </div>
             </section>
@@ -200,7 +200,7 @@
             </div>
         </div>
         <div class="subfooter">
-            <p class="developed-by">Desenvolvido por <a href="https://www.github.com/lilytorrx" target="_blank">Lídia Torres</a>. ₢2025</p>
+            <p class="developed-by" id="developed-by>Desenvolvido por <a href="https://www.github.com/lilytorrx" target="_blank">Lídia Torres</a>. ₢2025</p>
         </div>
     </footer>
 </body>
