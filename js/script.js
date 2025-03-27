@@ -53,14 +53,24 @@ function changeTexts(lang) {
         project4Desc: document.getElementById('project4-desc'),
         tecnologiesTitle: document.getElementById("tecnologies-title"),
         visitProject: document.getElementsByClassName("visit-project"),
-        logoCountry: document.getElementById("logo-country")
+        logoCountry: document.getElementById("logo-country"),
+        contactsLink: document.getElementById("contacts-link"),
+        aboutMeLink: document.getElementById("about-me-link"),
+        projectsLink: document.getElementById("projects-link")
     }
 
     console.log(lang)
     if(lang === 'pt-br') {
+        Array.from(elements.visitProject).forEach(button => {
+            button.innerHTML = `Visitar projeto`;
+        });
+
         elements.logoCountry.src = "../img/brasil-logo.png";
         elements.visitProject.innerHTML = `Visitar projeto`;
-        console.log(elements.visitProject);
+
+        elements.contactsLink.innerHTML = "Contatos";
+        elements.aboutMeLink.innerHTML = "Sobre mim";
+        elements.projectsLink.innerHTML = "Projetos";
 
         elements.titleLidia.innerHTML = `Olá, meu nome é <strong>Lídia Torres!</strong>`;
         elements.careerLidia.innerHTML = `Desenvolvedora Full-stack`;
@@ -79,6 +89,14 @@ function changeTexts(lang) {
 
         elements.project4Desc.innerHTML = `Criei uma rede social chamada de NexusSocial, onde utilizo o layout do Facebook como inspiração para fazer o meu próprio. Feito em <strong>HTML, CSS e JavaScript.</strong>`
     } else if(lang === 'en') {
+        Array.from(elements.visitProject).forEach(button => {
+            button.innerHTML = `Visit project`;
+        });
+
+        elements.contactsLink.innerHTML = "Contacts";
+        elements.aboutMeLink.innerHTML = "About me";
+        elements.projectsLink.innerHTML = "Projects";
+
         elements.logoCountry.src = "../img/eua-logo.png";
         elements.visitProject.innerHTML = `Visit project`;
 
