@@ -216,8 +216,8 @@
             iconTheme.src = 'img/dark-mode.png';
             localStorage.setItem('theme', 'light');
         } else {
-            themeLink.href = '../css/dark-mode.css';
-            iconTheme.src = '../img/light-mode.png';
+            themeLink.href = 'css/dark-mode.css';
+            iconTheme.src = 'img/light-mode.png';
             localStorage.setItem('theme', 'dark');
         }
     }
@@ -229,7 +229,7 @@
 
         if (savedTheme === 'light') {
             themeLink.href = 'css/light-mode.css';
-            iconTheme.src = '../img/dark-mode.png';
+            iconTheme.src = 'img/dark-mode.png';
         } else {
             themeLink.href = 'css/dark-mode.css';
             iconTheme.src = 'img/light-mode.png';
@@ -304,7 +304,7 @@
             elements.aboutMeLink.innerHTML = "About me";
             elements.projectsLink.innerHTML = "Projects";
 
-            elements.logoCountry.src = "../img/eua-logo.png";
+            elements.logoCountry.src = "img/eua-logo.png";
             elements.visitProject.innerHTML = `Visit project`;
 
             elements.titleLidia.innerHTML = `Hello, my name is <strong>Lídia Torres!</strong>`;
