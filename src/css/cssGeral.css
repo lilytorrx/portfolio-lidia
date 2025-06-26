@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+:root {
+    --fonte01: "JetBrains Mono";
+    
+    --cor_principal: #A153E5;
+    
+    --cor_preto: #000;
+    --cor_branco: #fff;
+}
