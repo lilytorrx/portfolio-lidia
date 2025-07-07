@@ -1,15 +1,9 @@
-import cssGeral from "./css/cssGeral.css";
-import cssHomePage from './css/homePage.css';
-
-import Header from "./components/header.js";
-import MainContent from "./components/mainContent.js";
+import React from 'react';
+import Routes from './routes.js';
 
 function App() {
   return (
-    <div style={cssGeral}>
-      <Header></Header>
-      <MainContent style={cssHomePage}></MainContent>
-    </div>
+    <Routes/>
   )
 }
 

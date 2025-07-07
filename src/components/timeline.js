@@ -1,0 +1,62 @@
+import {React, useState } from 'react';
+
+import Year2022 from './years/year2022.js'
+import Year2023 from './years/year2023.js'
+import Year2024 from './years/year2024.js'
+import Year2025 from './years/year2025.js'
+
+function Timeline() {
+    const [selectedYear, setSelectedYear] = useState(2022);
+    const changeYear = () => {
+        switch(selectedYear) {
+            case 2022:
+                return <Year2022 />
+                console.log(selectedYear);
+                break;
+            case 2023:
+                return <Year2023 />
+                console.log(selectedYear);
+                break;
+            case 2024:
+                return <Year2024 />
+                console.log(selectedYear);
+                break;
+            case 2025:
+                return <Year2025 />
+                console.log(selectedYear);
+                break;
+            default:
+                return <Year2022 />
+                break;
+        }
+    }
+
+    return (
+        <div className="timeline" id="timeline">
+            <h2>Linha do tempo</h2>
+            <div className="years">
+                <div className='year'>
+                    <button className={`btn ${selectedYear === 2022 ? 'active' : ''}`} onClick={() => setSelectedYear(2022)}>.</button>
+                    <p>2022</p>
+                </div>
+                <div className='year'>
+                    <button className={`btn ${selectedYear === 2023 ? 'active' : ''}`} onClick={() => setSelectedYear(2023)}>.</button>
+                    <p>2023</p>
+                </div>
+                <div className='year'>
+                    <button className={`btn ${selectedYear === 2024 ? 'active' : ''}`} onClick={() => setSelectedYear(2024)} >.</button>
+                    <p>2024</p>
+                </div>
+                <div className='year'>
+                    <button className={`btn ${selectedYear === 2025 ? 'active' : ''}`} onClick={() => setSelectedYear(2025)}>.</button>
+                    <p>2025</p>
+                </div>
+            </div>
+            <div id='content-timeline'>
+                {changeYear()}
+            </div>
+        </div>
+    )
+}
+
+export default Timeline;
