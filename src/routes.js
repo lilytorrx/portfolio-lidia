@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
-import Home from './components/home';
-import Projects from './components/projects';
-import Contact from './components/contact';
+import Home from './components/home.js';
+import Projects from './components/projects.js';
+import Contact from './components/contact.js';
 
 const AppRoutes = () => {
     return(
         <BrowserRouter>
             <Routes>
-                <Route element = { <Home/> } path='/'/>
-                <Route element = { <Contact/> } path='/contact'/>
-                <Route element = { <Projects/> } path='/projects'/>
+                <Route path='/' element = { <Home/> }/>
+                <Route path='/contact' element = { <Contact/> } />
+                <Route path='/projects' element = { <Projects/> } />
             </Routes>
         </BrowserRouter>
     )

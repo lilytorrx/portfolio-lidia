@@ -11,23 +11,14 @@ function Timeline() {
         switch(selectedYear) {
             case 2022:
                 return <Year2022 />
-                console.log(selectedYear);
-                break;
             case 2023:
                 return <Year2023 />
-                console.log(selectedYear);
-                break;
             case 2024:
                 return <Year2024 />
-                console.log(selectedYear);
-                break;
             case 2025:
                 return <Year2025 />
-                console.log(selectedYear);
-                break;
             default:
                 return <Year2022 />
-                break;
         }
     }
 
