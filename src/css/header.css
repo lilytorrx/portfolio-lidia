@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin: 1rem;
+    border-radius: 50px;
+}
+
+li a:hover {
+    color: var(--cor_principal);
+}
+
+.logo {
+    width: 150px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.resume {
+    background-color: var(--cor_principal);
+    color: var(--cor_branco);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.resume:hover {
+    color: var(--cor_branco);
+}

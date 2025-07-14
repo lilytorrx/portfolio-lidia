@@ -1,0 +1,58 @@
+.main-content {
+    margin: 1.5rem;
+    padding: 3rem 1.5rem;
+}
+
+.info-lidia {
+    justify-content: center;
+    gap: 30px;
+    margin: 2rem 0;
+}
+
+.main-content .info-lidia .img-lidia {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.main-content .info-lidia .img-lidia img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--cor_principal);
+}
+
+.main-content .network figure {
+    width: 50px;
+}
+
+.networks, .info-lidia {
+    display: flex;
+}
+
+.name {
+    font-size: 1.2rem;
+}
+
+.networks {
+    gap: 20px;
+}
+
+.name, .occupation, .networks {
+    margin: 1rem 0;
+}
+
+.occupation {
+    color: var(--cor_cinza_claro);
+}
+
+.about-me {
+    padding: 1.5rem;
+    margin: 1rem;
+}
+
+.about-me p {
+    margin: 2rem 0;
+}
+
+.about-me .title {
+    text-align: center;
+}

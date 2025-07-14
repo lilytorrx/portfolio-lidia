@@ -6,13 +6,62 @@
     padding: 0;
     box-sizing: border-box;
     border: 0;
+
+    font-family: var(--fonte01);
 }
 
 :root {
     --fonte01: "JetBrains Mono";
     
     --cor_principal: #A153E5;
-    
+    --cor_secundaria: #0A0014;
+    --cor_terciaria: #0A0014;
+
     --cor_preto: #000;
     --cor_branco: #fff;
+    --cor_cinza: #121212;
+
+    --cor_cinza_claro: #6e6e6e;
+
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--cor_preto), var(--cor_terciaria));
+}
+
+.btn {
+    width: 100px;
+    height: auto;
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+    background-color: var(--cor_principal);
+    color: var(--cor_branco);
+    border-radius: 20px;
+}
+
+h3, h2, h1, .purple, .active {
+    color: var(--cor_principal);
+}
+
+p, a {
+    color: var(--cor_branco);
+}
+
+header, .year-info {
+    background-color: var(--cor_cinza);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+a {
+    text-decoration: none;
+    transition: .2s ease-in;
 }

@@ -3,14 +3,14 @@ import secondFeaturePic from '../../assets/javascript-icon.png'
 
 function Year2022() {
     return (
-        <div class='year-info'>
+        <div className='year-info'>
             <h2 className='title'>2022</h2>
-            <div class='year-features'>
+            <div className='year-features'>
                 <div className='year-feature'>
-                    <img className='first-year-picture' src={firstFeaturePic} alt="Logo KARNAK"/>
+                    <img className='year-img' src={firstFeaturePic} alt="Logo KARNAK"/>
                     <h3 className='feature-title'>Primeiro trabalho como Freelancer - KARNAK</h3>
                     <p>Construí uma loja virtual estática completa (visualização de produto, cadastro/login, media queries) como Trabalho de Conclusão de Curso de um amigo, enfrentei muitos desafios, tais como:</p>
-                    <ul>
+                    <ul className='year-details'>
                         <li>Estruturação de código</li>
                         <li>Briefing mal estruturado</li>
                         <li>Estilização (GAMBIARRAS)</li>
@@ -18,10 +18,10 @@ function Year2022() {
                     </ul>
                 </div>
                 <div className='year-feature'>
-                    <img className='first-year-picture' src={secondFeaturePic} alt="Logo JavaScript"/>
+                    <img className='year-img' src={secondFeaturePic} alt="Logo JavaScript"/>
                     <h3 className='feature-title'>Interesse extremo no JavaScript</h3>
                     <p>Construí uma loja virtual estática completa (visualização de produto, cadastro/login, media queries) como Trabalho de Conclusão de Curso de um amigo, enfrentei muitos desafios, tais como:</p>
-                    <ul>
+                    <ul className='year-details'>
                         <li><a href='#'>NexusSocial</a></li>
                         <li><a href='#'>Calculadora de IMC</a></li>
                         <li><a href='#'>Relógio digital</a></li>

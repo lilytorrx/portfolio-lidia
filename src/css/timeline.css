@@ -1,1 +1,38 @@
 @charset "UTF=8";
+
+.timeline {
+    text-align: center;
+    padding: 1.5rem;
+    margin: 1rem;
+}
+
+.years {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    gap: 30px;
+}
+
+.btnYear {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--cor_cinza_claro);
+    margin: 1rem;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.active {
+    background-color: var(--cor_principal);
+}
+
+.year p {
+    font-size: 1.3rem;
+}
+
+.years span {
+    color: var(--cor_cinza_claro);
+    font-size: 1.3rem;
+}

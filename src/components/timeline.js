@@ -5,6 +5,9 @@ import Year2023 from './years/year2023.js'
 import Year2024 from './years/year2024.js'
 import Year2025 from './years/year2025.js'
 
+import '../css/timeline.css'
+import '../css/cssGeral.css'
+
 function Timeline() {
     const [selectedYear, setSelectedYear] = useState(2022);
     const changeYear = () => {
@@ -27,19 +30,22 @@ function Timeline() {
             <h2>Linha do tempo</h2>
             <div className="years">
                 <div className='year'>
-                    <button className={`btn ${selectedYear === 2022 ? 'active' : ''}`} onClick={() => setSelectedYear(2022)}>.</button>
+                    <button className={`btnYear ${selectedYear === 2022 ? 'active' : ''}`} onClick={() => setSelectedYear(2022)}></button>
                     <p>2022</p>
                 </div>
+                <span>&gt;</span>
                 <div className='year'>
-                    <button className={`btn ${selectedYear === 2023 ? 'active' : ''}`} onClick={() => setSelectedYear(2023)}>.</button>
+                    <button className={`btnYear ${selectedYear === 2023 ? 'active' : ''}`} onClick={() => setSelectedYear(2023)}></button>
                     <p>2023</p>
                 </div>
+                <span>&gt;</span>
                 <div className='year'>
-                    <button className={`btn ${selectedYear === 2024 ? 'active' : ''}`} onClick={() => setSelectedYear(2024)} >.</button>
+                    <button className={`btnYear ${selectedYear === 2024 ? 'active' : ''}`} onClick={() => setSelectedYear(2024)}></button>
                     <p>2024</p>
                 </div>
+                <span>&gt;</span>
                 <div className='year'>
-                    <button className={`btn ${selectedYear === 2025 ? 'active' : ''}`} onClick={() => setSelectedYear(2025)}>.</button>
+                    <button className={`btnYear ${selectedYear === 2025 ? 'active' : ''}`} onClick={() => setSelectedYear(2025)}></button>
                     <p>2025</p>
                 </div>
             </div>
