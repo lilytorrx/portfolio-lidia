@@ -5,7 +5,7 @@ function Year2025() {
     return (
         <div className='year-info'>
             <h2 className='title'>2025</h2>
-            <div class='year-features'>
+            <div className='year-features'>
                 <div className='year-feature'>
                     <img className='year-img' src={firstFeaturePic} alt="logo Lilytorrx"/>
                     <h3 className='feature-title'>Recriação do meu pórtfolio e criação da <span className='purple'>minha identidade visual</span></h3>
