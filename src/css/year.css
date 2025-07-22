@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 .year-info {
-    padding: 1rem;
+    padding: 2rem 1rem;
     text-align: justify;
+    border-radius: 10px;
+    margin: 5rem 0;
 }
 
 .title {
