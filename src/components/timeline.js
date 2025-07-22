@@ -8,6 +8,7 @@ import Year2025 from './years/year2025.js';
 
 import '../css/timeline.css';
 import '../css/cssGeral.css';
+import '../css/year.css';
 import useScrollReveal from '../hooks/useScrollReveal';
 
 function Timeline() {

@@ -52,10 +52,6 @@ header, .year-info {
     background-color: var(--cor_cinza);
 }
 
-ul {
-    list-style: none;
-}
-
 li {
     display: inline-block;
     margin: 1rem;
