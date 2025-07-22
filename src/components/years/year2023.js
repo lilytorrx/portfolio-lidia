@@ -1,11 +1,19 @@
 import firstFeaturePic from '../../assets/confia-icon.png';
 import secondFeaturePic from '../../assets/laravel-icon.png';
+import useScrollReveal from '../../hooks/useScrollReveal';
 
 function Year2023() {
+    useScrollReveal(['.year-info h2', '.year-info .year-feature', '.year-info .year-details li'], {
+        origin: 'bottom',
+        distance: '30px',
+        delay: 100,
+        interval: 100,
+    });
+
     return (
         <div className='year-info'>
             <h2 className='title'>2023</h2>
-            <div class='year-features'>
+            <div className='year-features'>
                 <div className='year-feature'>
                     <img className='year-img' src={firstFeaturePic} alt="Logo projeto CONFIA"/>
                     <h3 className='feature-title'>Primeiro site institucional - <span className='purple'>Projeto CONFIA</span></h3>
@@ -30,7 +38,7 @@ function Year2023() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Year2023;

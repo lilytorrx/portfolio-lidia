@@ -1,11 +1,19 @@
-import firstFeaturePic from '../../assets/matin-icon.png'
-import secondFeaturePic from '../../assets/chatgpt.png'
+import firstFeaturePic from '../../assets/matin-icon.png';
+import secondFeaturePic from '../../assets/chatgpt.png';
+import useScrollReveal from '../../hooks/useScrollReveal';
 
 function Year2024() {
+    useScrollReveal(['.year-info h2', '.year-info .year-feature', '.year-info .year-details li'], {
+        origin: 'bottom',
+        distance: '30px',
+        delay: 100,
+        interval: 100,
+    });
+
     return (
         <div className='year-info'>
             <h2 className='title'>2024</h2>
-            <div class='year-features'>
+            <div className='year-features'>
                 <div className='year-feature'>
                     <img className='year-img' src={firstFeaturePic} alt="Logo projeto Matin"/>
                     <h3 className='feature-title'>Conclusão do Trabalho de Conclusão de Curso - Mat-in</h3>
@@ -20,11 +28,11 @@ function Year2024() {
                 <div className='year-feature'>
                     <img className='year-img' src={secondFeaturePic} alt="logo chatGPT"/>
                     <h3 className='feature-title'>Diversos testes com as tecnologias emergentes</h3>
-                    <p>Comecei a estudar IA e implementar soluções com ela, pelo ChatGPT, DeepSeek e afins. Ajustei meu LinkedIn para melhor visiblidade para os recrutadores e estava focada em aprender as matérias do curso técnico.</p>
+                    <p>Comecei a estudar IA e implementar soluções com ela, pelo ChatGPT, DeepSeek e afins. Ajustei meu LinkedIn para melhor visibilidade para os recrutadores e estava focada em aprender as matérias do curso técnico.</p>
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Year2024;

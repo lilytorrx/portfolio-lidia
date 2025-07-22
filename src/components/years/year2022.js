@@ -1,7 +1,15 @@
-import firstFeaturePic from '../../assets/karnak-icon.png'
-import secondFeaturePic from '../../assets/javascript-icon.png'
+import firstFeaturePic from '../../assets/karnak-icon.png';
+import secondFeaturePic from '../../assets/javascript-icon.png';
+import useScrollReveal from '../../hooks/useScrollReveal';
 
 function Year2022() {
+    useScrollReveal(['.year-info h2', '.year-info .year-feature', '.year-info .year-details li'], {
+        origin: 'bottom',
+        distance: '30px',
+        delay: 100,
+        interval: 100,
+    });
+
     return (
         <div className='year-info'>
             <h2 className='title'>2022</h2>
@@ -30,7 +38,7 @@ function Year2022() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default Year2022;
