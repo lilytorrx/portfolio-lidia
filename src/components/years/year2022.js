@@ -33,10 +33,10 @@ function Year2022() {
                         <h3 className='feature-title'>Interesse extremo no JavaScript</h3>
                         <p>Construí uma loja virtual estática completa (visualização de produto, cadastro/login, media queries) como Trabalho de Conclusão de Curso de um amigo, enfrentei muitos desafios, tais como:</p>
                         <ul className='year-details'>
-                            <li><a href='https://www.github.com/lilytorrx/nexusSocial' rel='noopener noreferrer'>NexusSocial</a></li>
-                            <li><a href='https://www.github.com/lilytorrx/project-calculadora-imc' rel='noopener noreferrer'>Calculadora de IMC</a></li>
-                            <li><a href='https://github.com/lilytorrx/projeto-relogio-digital' rel='noopener noreferrer'>Relógio digital</a></li>
-                            <li><a href='https://github.com/lilytorrx/projeto-jogo-da-velha' rel='noopener noreferrer'>Jogo da Velha</a></li>
+                            <li><a href='https://www.github.com/lilytorrx/nexusSocial' target="_blank" rel='noopener noreferrer'>NexusSocial</a></li>
+                            <li><a href='https://www.github.com/lilytorrx/projeto-calculadora-imc' target="_blank" rel='noopener noreferrer'>Calculadora de IMC</a></li>
+                            <li><a href='https://github.com/lilytorrx/projeto-relogio-digital' target="_blank" rel='noopener noreferrer'>Relógio digital</a></li>
+                            <li><a href='https://github.com/lilytorrx/projeto-jogo-da-velha' target="_blank" rel='noopener noreferrer'>Jogo da Velha</a></li>
                         </ul>
                     </div>
                 </div>

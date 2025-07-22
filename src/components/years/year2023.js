@@ -34,9 +34,9 @@ function Year2023() {
                         <p>Essa época, descobri os frameworks. Fiquei fascinada em como o React funcionava em relação a modularização e componentes. No 2° ano do curso técnico, aprendi PHP, que me fez estudar Laravel, a estrutura de MVC e routes. Alguns projetos nestas tecnologias são: </p>
                         <ul className='year-details'>
                             <li><a href='#'>Este portfólio (React)</a></li>
-                            <li><a href='https://github.com/lilytorrx/projeto-calculadora-imc' rel='noopener noreferrer'>Calculadora de IMC</a></li>
-                            <li><a href='https://github.com/lilytorrx/ltevents' rel='noopener noreferrer'>LTEvents</a></li>
-                            <li><a href='https://github.com/lilytorrx/bitcont' rel='noopener noreferrer'>BitCont</a></li>
+                            <li><a href='https://github.com/lilytorrx/projeto-calculadora-imc' target="_blank" rel='noopener noreferrer'>Calculadora de IMC</a></li>
+                            <li><a href='https://github.com/lilytorrx/ltevents' target="_blank" rel='noopener noreferrer'>LTEvents</a></li>
+                            <li><a href='https://github.com/lilytorrx/bitcont' target="_blank" rel='noopener noreferrer'>BitCont</a></li>
                         </ul>
                     </div>
                 </div>

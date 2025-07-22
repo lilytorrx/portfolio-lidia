@@ -32,7 +32,7 @@ function Year2025() {
                         <h3 className='feature-title'>Comecei a estudar <span className='purple'>Java</span></h3>
                         <p>Estava navegando pela internet quando vi um link para ingressar no Bootcamp da DIO para aprender Java. Como eu já tinha interesse nessa linguagem, ingressei de imediato. Estudei POO e Classes, fazendo mini projetos e testando bastante. </p>
                         <ul className='year-details'>
-                            <li><a href='https://github.com/lilytorrx/sudoku-java' rel='noopener noreferrer'>Sudoku em Java com Swing</a></li>
+                            <li><a href='https://github.com/lilytorrx/sudoku-java' target="_blank" rel='noopener noreferrer'>Sudoku em Java com Swing</a></li>
                         </ul>
                     </div>
                 </div>
