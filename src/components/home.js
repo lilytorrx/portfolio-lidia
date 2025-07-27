@@ -7,6 +7,7 @@ import MainContent from "./mainContent.js";
 import Timeline from "./timeline.js";
 
 import useScrollReveal from '../hooks/useScrollReveal';
+import Footer from "./footer.js";
 
 function Home() {
     useScrollReveal(['.home-page'], { origin: 'top', distance: '40px', delay: 200 });
@@ -17,6 +18,7 @@ function Home() {
             <Header />
             <MainContent />
             <Timeline />
+            <Footer />
         </div>
     );
 }
