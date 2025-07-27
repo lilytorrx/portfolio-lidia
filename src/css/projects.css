@@ -61,7 +61,7 @@ select {
 }
 
 .project-image {
-    width: 300px;
+    width: 200px;
     border-radius: 8px;
     object-fit: cover;
     transition: all 0.3s ease-in-out;
