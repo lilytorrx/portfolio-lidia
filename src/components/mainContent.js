@@ -10,7 +10,7 @@ function MainContent() {
 
     useEffect(() => {
         const options = {
-            strings: ["UX/UI Designer", "Full-stack Developer", "Graphic Designer"], 
+            strings: ["UX/UI Designer", "Desenvolvedora Full-stack", "Designer Gráfico", "Desenvolvedora Front-end", "Desenvolvedora Back-end"], 
             typeSpeed: 50,
             backSpeed: 20, 
             backDelay: 500, 

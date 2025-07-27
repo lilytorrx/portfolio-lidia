@@ -54,3 +54,36 @@
     color: var(--cor_principal);
     text-decoration: none;
 }
+
+
+@media screen and (max-width: 768px) {
+    
+    .year-info {
+        padding: 1rem;
+        margin: 2rem 0;
+    }    
+
+    .year-feature {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .year-feature img {
+        width: 200px;
+        height: 200px;
+        margin: 2rem;
+    }
+
+    .year-feature h3 {
+        font-size: 1rem;
+    }
+
+    .year-feature p {
+        font-size: 0.9rem;
+    }
+
+    .year-details {
+        padding-left: 1rem;
+    }
+}

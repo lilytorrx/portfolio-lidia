@@ -34,10 +34,10 @@ input {
     text-align: left;
 }
 
-button {
+form button {
     width: 200px;
     padding: 0.5rem;
-    margin: 2rem auto;
+    margin: 2rem auto!important;
     border-radius: 50px;
     background-color: var(--cor_principal);
     color: var(--cor_branco);
@@ -60,4 +60,23 @@ form {
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        width: 500px;
+        padding: 0.5rem;
+    }
+
+    input, textarea {
+        width: 400px;
+    }
+
+    button {
+        width: 400px;
+    }
+    
+    label {
+        text-align: center;
+    }
 }

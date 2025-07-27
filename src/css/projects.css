@@ -134,3 +134,16 @@ p a:hover {
 .fade-container.fade-out {
     opacity: 0;
 }
+
+@media screen and (max-width: 768px) {
+    .project-image {
+        width: 200px;
+    }
+
+    .project-item {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

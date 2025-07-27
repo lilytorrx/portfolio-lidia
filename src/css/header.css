@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 2rem;
+    padding: 1rem!important;
     margin: 1rem;
     border-radius: 100px;
 }
@@ -36,57 +36,50 @@ header ul {
     list-style: none;
 }
 
-/* Botão hambúrguer */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 24px;
-    height: 18px;
+/* Botão hambúrguer novo */
+.hamburger-icon {
+    display: none; /* só aparece no mobile */
     background: none;
     border: none;
     cursor: pointer;
     z-index: 1100;
 }
-.hamburger span {
-    display: block;
-    height: 3px;
-    width: 100%;
-    background: var(--cor_branco);
-    transition: 0.3s;
-}
-.hamburger.open span:nth-child(1) {
-    transform: rotate(45deg) translate(4px, 4px);
-}
-.hamburger.open span:nth-child(2) {
-    opacity: 0;
-}
-.hamburger.open span:nth-child(3) {
-    transform: rotate(-45deg) translate(4px, -4px);
+
+/* Desktop mantém os links horizontais */
+header ul {
+    margin-bottom: 0;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
 }
 
-/* ======== MOBILE ======== */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
-        padding: 2rem;
+        align-items: stretch; /* mantém largura total */
+        padding: 1rem 2rem;
         margin: 0;
         border-radius: 0;
-        text-align: center;
         position: relative;
     }
 
-    .logo {
-        margin: auto;
+    .header-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* logo à esquerda, botão à direita */
     }
 
-    /* Botão hambúrguer visível no mobile */
-    .hamburger {
-        display: flex;
-        position: absolute;
-        top: 1.5rem;
-        right: 2rem;
+    .logo {
+        margin: 0; /* remove centralização forçada */
+    }
+
+    .hamburger-icon {
+        display: block;
+        position: static; /* agora segue o flex da header-container */
+        width: fit-content;
+        margin: 0!important; /* remove margem */
     }
 
     nav {
@@ -96,9 +89,9 @@ header ul {
         transition: max-height 0.3s ease-in-out;
         text-align: center;
     }
-    
+
     nav.open {
-        max-height: 300px; 
+        max-height: 300px;
     }
 
     header ul {
@@ -109,25 +102,31 @@ header ul {
         padding: 1rem 0;
     }
 
-    nav {
-        margin: 1rem auto 0 auto;
-    }
-
     .resume {
         width: 100%;
         text-align: center;
     }
 
-    .header-container {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
+    .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.3s ease-in-out;
+}
 
-    header .header-container .hamburger-icon {
-        width: 100px!important;
-        height: auto!important;
-    }
+        /* Quando o menu abrir, o overlay aparece */
+        .menu-overlay.show {
+            opacity: 1;
+        }
 
+        /* Garante que o menu fica acima do overlay */
+        nav.open {
+            position: relative;
+            z-index: 1100;
+        }
 }

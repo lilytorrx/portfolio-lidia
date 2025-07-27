@@ -36,3 +36,24 @@
     color: var(--cor_cinza_claro);
     font-size: 1.3rem;
 }
+
+
+@media screen and (max-width: 768px) {
+    .timeline {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .years {
+        gap: 0px;
+    }
+
+    .btnYear {
+        width: 40px;
+        height: 40px;
+    }
+
+    .year p {
+        font-size: 1.1rem;
+    }
+}
