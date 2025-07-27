@@ -7,12 +7,14 @@ import ProjectsDeveloper from './projects/projectsDeveloper.js';
 import Header from "./header.js";
 import Footer from "./footer.js";
 
+import '../css/projects.css';
+
 import useScrollReveal from '../hooks/useScrollReveal';
 
 function Projects() {
     const [selectedCategory, setSelectedCategory] = useState('design');
+    const [isTransitioning, setIsTransitioning] = useState(false);
 
-    // Revela o título e o seletor com animações
     useScrollReveal(['.projects-div h2', '.projects-category select', '.projects-category p'], {
         origin: 'bottom',
         distance: '20px',
@@ -26,23 +28,32 @@ function Projects() {
         delay: 400,
     });
 
+    const handleCategoryChange = (e) => {
+        const newCategory = e.target.value;
+        setIsTransitioning(true);
+        setTimeout(() => {
+            setSelectedCategory(newCategory);
+            setIsTransitioning(false);
+        }, 300);
+    };
+
     return (
         <div>
             <Header />
             <div className='projects-div'>
                 <div className="projects-category">
                     <h2 className='title'>Projetos</h2>
-                    <p className='category'>
-                        {selectedCategory === 'design' ? "Design" : "Desenvolvedora Full-stack"}
-                    </p>
-                    <select onChange={(e) => setSelectedCategory(e.target.value)} value={selectedCategory}>
+                    <p className='category'>Veja os projetos que já desenvolvi como:</p>
+                    <select onChange={handleCategoryChange} value={selectedCategory}>
                         <option value="design">Designer</option>
                         <option value="developer">Desenvolvedora Full-stack</option>
                     </select>
                 </div>
 
-                {selectedCategory === 'design' && <ProjectsDesign />}
-                {selectedCategory === 'developer' && <ProjectsDeveloper />}
+                <div className={`fade-container ${isTransitioning ? 'fade-out' : 'fade-in'}`}>
+                    {selectedCategory === 'design' && <ProjectsDesign />}
+                    {selectedCategory === 'developer' && <ProjectsDeveloper />}
+                </div>
 
                 <p>
                     Gostou de algum dos projetos? Veja mais no{' '}

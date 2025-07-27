@@ -1,13 +1,20 @@
+import { useState } from 'react';
 import logo from '../assets/imagotipo_deitado.png';
-import curriculo from '../archives/curriculo-lidia-copia.pdf';
 
 import { Link } from 'react-router-dom';
 
 import '../css/header.css';
 import useScrollReveal from '../hooks/useScrollReveal';
+import Modal from './modal';
 
 function Header() {
-    // Corrigido para usar a classe `.logo` e `nav` diretamente
+    
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
+
+    
     useScrollReveal(['.logo', 'nav'], { origin: 'top', delay: 100 });
 
     return (
@@ -21,17 +28,12 @@ function Header() {
                     <li><Link to='/projects'>Projetos</Link></li>
                     <li><Link to='/contact'>Contato</Link></li>
                     <li>
-                        <a
-                            className='resume'
-                            href={curriculo}
-                            download="curriculo-lidia"
-                            rel="noreferrer noopener"
-                        >
-                            Baixar currículo
-                        </a>
+                        <button onClick={openModal} className="resume">Baixar currículo</button>
                     </li>
                 </ul>
             </nav>
+
+            <Modal isOpen={isModalOpen} closeModal={closeModal} />
         </header>
     );
 }

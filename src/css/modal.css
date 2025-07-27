@@ -1,0 +1,45 @@
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: var(--cor_cinza);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 450px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-buttons button {
+    width: 200px;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--cor_principal);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.close-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--cor_cinza_claro);
+    color: white;
+    background-color: var(--cor_cinza);
+    border-radius: 5px;
+    cursor: pointer;
+}
