@@ -36,6 +36,16 @@ function Year2025() {
                         </ul>
                     </div>
                 </div>
+                <div className='year-feature'>
+                    <img className='year-img' src={thirdFeaturePic} alt="Logo MEDKAYA"/>
+                    <div>
+                        <h3 className='feature-title'>Iniciei minha carreira formal - <span className='purple'>MEDKAYA</span></h3>
+                        <p>Fui contratada pela MEDKAYA como Desenvolvedora Front-end, criando interfaces prototipadas no Figma, mantendo as páginas responsivas e dinâmicas.</p>
+                        <ul className='year-details'>
+                            <li><a href='https://www.medkayafarma.com.br' target="_blank" rel='noopener noreferrer'>Site da empresa</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     );
