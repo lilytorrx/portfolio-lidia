@@ -1,5 +1,6 @@
 import firstFeaturePic from '../../assets/lilytorrx-icon.png';
 import secondFeaturePic from '../../assets/java-icon.png';
+import thirdFeaturePic from '../../assets/logo-medkaya.png';
 import useScrollReveal from '../../hooks/useScrollReveal';
 
 function Year2025() {
