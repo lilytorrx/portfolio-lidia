@@ -28,13 +28,18 @@ footer {
 
 @media screen and (max-width: 768px) {
     footer {
+        width: 100%;
         margin: 1rem auto;
     }
     
     .footer-content {
         gap: 2rem;
-        width: 200px;
+        width: 100%;
         margin: 1rem 0;
+    }
+
+    .logo {
+        width: 100%;
     }
 
     footer p {
