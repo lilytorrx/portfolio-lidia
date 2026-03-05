@@ -1,10 +1,11 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import ScrollReveal from 'scrollreveal';
 
 export default function useScrollReveal(targets = []) {
-    const joinTargets = targets.join();
+    const targetsRef = useRef(targets);
+
     useEffect(() => {
-        targets.forEach((target, index) => {
+        targetsRef.current.forEach((target, index) => {
             ScrollReveal().reveal(target, {
                 distance: '40px',
                 duration: 1000,
@@ -13,5 +14,5 @@ export default function useScrollReveal(targets = []) {
                 reset: false,
             });
         });
-    }, [joinTargets]);
+    }, []);
 }
