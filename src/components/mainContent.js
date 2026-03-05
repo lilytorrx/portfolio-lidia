@@ -10,7 +10,7 @@ function MainContent() {
 
     useEffect(() => {
         const options = {
-            strings: ["UX/UI Designer", "Desenvolvedora Full-stack", "Designer Gráfico", "Desenvolvedora Front-end", "Desenvolvedora Back-end"], 
+            strings: ["UX/UI Designer", "Desenvolvedora Full-stack", "Desenvolvedora Front-end", "Desenvolvedora Back-end"], 
             typeSpeed: 50,
             backSpeed: 20, 
             backDelay: 500, 
@@ -62,7 +62,7 @@ function MainContent() {
             <div className="about-me" id="about-me">
                 <h2 className="title">Sobre mim</h2>
                 <p>
-                    Sou desenvolvedora Full-Stack com experiência no desenvolvimento de sistemas escaláveis e interfaces consistentes. Trabalho com diversas tecnologias, incluindo <span className="purple">PHP, JavaScript, React, Laravel, MySQL, HTML, CSS, Java, WordPress e React Native.</span> Também utilizo a <span className="purple">ORM Prisma</span> para integração com bancos de dados e realizo o versionamento de todos os meus projetos por meio do <span className="purple">Git e GitHub.</span>
+                    Sou desenvolvedora Front-end com experiência no desenvolvimento de sistemas escaláveis e interfaces consistentes. Trabalho com diversas tecnologias, incluindo <span className="purple">PHP, JavaScript, React, Laravel, MySQL, HTML, CSS, Java, WordPress e React Native.</span> Também utilizo a <span className="purple">ORM Prisma</span> para integração com bancos de dados e realizo o versionamento de todos os meus projetos por meio do <span className="purple">Git e GitHub.</span>
                 </p>
                 <p>
                     Tenho experiência no desenvolvimento de sistemas complexos, como um marketplace agrícola construído com PHP e Bootstrap, desenvolvido como <span className="purple">Trabalho de Conclusão de Curso</span> no ensino técnico. Além disso, realizo prototipações de interfaces no Figma, garantindo alinhamento entre design e funcionalidade.
