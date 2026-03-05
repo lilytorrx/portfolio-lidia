@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import ScrollReveal from 'scrollreveal';
 
-export default function useScrollReveal(targets = [], config = {}) {
+export default function useScrollReveal(targets = []) {
     useEffect(() => {
         targets.forEach((target, index) => {
             ScrollReveal().reveal(target, {
@@ -10,8 +10,7 @@ export default function useScrollReveal(targets = [], config = {}) {
                 easing: 'ease-in-out',
                 delay: 100 * index,
                 reset: false,
-                ...config,
             });
         });
-    }, [targets.join()]); // Dependência: atualiza se os alvos mudarem
+    }, [targets.join()]); 
 }
