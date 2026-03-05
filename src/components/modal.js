@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import '../css/modal.css'; 
 import useScrollReveal from '../hooks/useScrollReveal'; 
 
