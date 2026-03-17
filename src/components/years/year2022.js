@@ -31,7 +31,7 @@ function Year2022() {
                     <img className='year-img' src={secondFeaturePic} alt="Logo JavaScript"/>
                     <div>
                         <h3 className='feature-title'>Interesse extremo no JavaScript</h3>
-                        <p>Construí uma loja virtual estática completa (visualização de produto, cadastro/login, media queries) como Trabalho de Conclusão de Curso de um amigo, enfrentei muitos desafios, tais como:</p>
+                        <p>Durante o curso técnico, descobri que eu era apaixonada pelo front-end e não teve outra, fiz alguns jogos, estudei JSON como se não houvesse amanhã. Aqui estão alguns dos meus projetos em JS:</p>
                         <ul className='year-details'>
                             <li><a href='https://www.github.com/lilytorrx/nexusSocial' target="_blank" rel='noopener noreferrer'>NexusSocial</a></li>
                             <li><a href='https://www.github.com/lilytorrx/projeto-calculadora-imc' target="_blank" rel='noopener noreferrer'>Calculadora de IMC</a></li>
